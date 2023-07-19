@@ -1,0 +1,883 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ---------------Global Styles------------------- */
+:root {
+	--text-color: #748182;
+	--main-color: #1c1c1c;
+	--animation-time: 0.6s;
+  }
+  html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 72px;
+  }
+  body {
+	font-family: "Poppins", sans-serif;
+	color: #343434;
+	font-weight: 400;
+  }
+  .text-color {
+	color: var(--text-color) !important;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	font-family: "Montserrat", sans-serif;
+  }
+  a {
+	text-decoration: none;
+  }
+  .section-head {
+	margin-bottom: 80px;
+	text-align: center;
+  }
+  .section-head h3 {
+	font-weight: 900;
+	font-size: 40px;
+	position: relative;
+	display: inline-block;
+	z-index: 999;
+  }
+  .section-head h3::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 30px;
+	-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+			transform: translateX(-50%);
+	z-index: -1;
+	background-image: url(../images/dots.png);
+  }
+  /* ---------------------Start Header-------------------------- */
+  /* -----------------Navbar--------------------- */
+  #home {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0009), to(#0009)), url(../images/bg.jpg);
+	background-image: -o-linear-gradient(#0009, #0009), url(../images/bg.jpg);
+	background-image: linear-gradient(#0009, #0009), url(../images/bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+  }
+  .logo {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	letter-spacing: 1px;
+  }
+  .navbar .nav-link {
+	position: relative;
+	font-size: 0.9rem;
+	padding: 0 !important;
+	margin: 0 10px;
+  }
+  .nav-link::after,
+  .nav-link.active::after {
+	content: "";
+	width: 0;
+	height: 2px;
+	background: var(--main-color);
+	position: absolute;
+	bottom: -0.1rem;
+	left: 0;
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+  }
+  body:not(:has(:target)) .home-link,
+  body:has(.home:target) .home-link,
+  body:has(.about:target) .about-link,
+  body:has(.services:target) .services-link,
+  body:has(.works:target) .works-link,
+  body:has(.clients:target) .clients-link,
+  body:has(.team:target) .team-link,
+  body:has(.contact:target) .contact-link {
+	color: var(--main-color);
+  }
+  
+  .nav-link.active::after,
+  body:not(:has(:target)) .home-link::after,
+  body:has(.home:target) .home-link::after,
+  body:has(.about:target) .about-link::after,
+  body:has(.services:target) .services-link::after,
+  body:has(.works:target) .works-link::after,
+  body:has(.clients:target) .clients-link::after,
+  body:has(.team:target) .team-link::after,
+  body:has(.contact:target) .contact-link::after {
+	content: "";
+	width: 100%;
+  }
+  /* ---------------Home Content-------------------- */
+  .home-content h5 {
+	font-size: 50px;
+	font-weight: 800;
+	margin-bottom: 10px;
+  }
+  .animation-title {
+	font-size: 4rem;
+	font-weight: 400;
+  }
+  .animation-title span {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 200;
+  }
+  .animation-title::after {
+	content: " |";
+	-webkit-animation: typing 7s linear infinite;
+			animation: typing 7s linear infinite;
+  }
+  @-webkit-keyframes typing {
+	0% {
+	  content: " |";
+	}
+	1.5% {
+	  content: "L|";
+	}
+	3% {
+	  content: "La|";
+	}
+	4.5% {
+	  content: "Lar|";
+	}
+	6% {
+	  content: "Larr|";
+	}
+	7.5% {
+	  content: "Larry|";
+	}
+	9% {
+	  content: "Larry |";
+	}
+	10.5% {
+	  content: "Larry D|";
+	}
+	12% {
+	  content: "Larry Da|";
+	}
+	13.5% {
+	  content: "Larry Dan|";
+	}
+	15% {
+	  content: "Larry Dani|";
+	}
+	16.5% {
+	  content: "Larry Danie|";
+	}
+	18% {
+	  content: "Larry Daniel|";
+	}
+	19.5% {
+	  content: "Larry Daniels|";
+	}
+	22.5% {
+	  content: "Larry Daniels|";
+	}
+	24% {
+	  content: "Larry Daniel|";
+	}
+	25.5% {
+	  content: "Larry Danie|";
+	}
+	27% {
+	  content: "Larry Dani|";
+	}
+	28.5% {
+	  content: "Larry Dan|";
+	}
+	30% {
+	  content: "Larry Da|";
+	}
+	31.5% {
+	  content: "Larry D|";
+	}
+	33% {
+	  content: "Larry |";
+	}
+	34.5% {
+	  content: "Larry|";
+	}
+	36% {
+	  content: "Larr|";
+	}
+	37.5% {
+	  content: "Lar|";
+	}
+	39% {
+	  content: "La|";
+	}
+	40.5% {
+	  content: "L|";
+	}
+	42% {
+	  content: "|";
+	}
+	43.5% {
+	  content: "D|";
+	}
+	45% {
+	  content: "De|";
+	}
+	46.5% {
+	  content: "Dev|";
+	}
+	48% {
+	  content: "Deve|";
+	}
+	49.5% {
+	  content: "Devel|";
+	}
+	51% {
+	  content: "Develo|";
+	}
+	52.5% {
+	  content: "Develop|";
+	}
+	54% {
+	  content: "Develope|";
+	}
+	55.5% {
+	  content: "Developer|";
+	}
+	58.5% {
+	  content: "Developer|";
+	}
+	60% {
+	  content: "Develope|";
+	}
+	61.5% {
+	  content: "Develop|";
+	}
+	63% {
+	  content: "Develo|";
+	}
+	64.5% {
+	  content: "Devel|";
+	}
+	66% {
+	  content: "Deve|";
+	}
+	67.5% {
+	  content: "Dev|";
+	}
+	69% {
+	  content: "De|";
+	}
+	70.5% {
+	  content: "D|";
+	}
+	72% {
+	  content: "|";
+	}
+	73.5% {
+	  content: "D|";
+	}
+	75% {
+	  content: "De|";
+	}
+	76.5% {
+	  content: "Des|";
+	}
+	78% {
+	  content: "Desi|";
+	}
+	79.5% {
+	  content: "Desig|";
+	}
+	81% {
+	  content: "Design|";
+	}
+	82.5% {
+	  content: "Designe|";
+	}
+	84% {
+	  content: "Designer|";
+	}
+	87% {
+	  content: "Designer|";
+	}
+	88.5% {
+	  content: "Designe|";
+	}
+	90% {
+	  content: "Design|";
+	}
+	91.5% {
+	  content: "Desig|";
+	}
+	93% {
+	  content: "Desi|";
+	}
+	94.5% {
+	  content: "Des|";
+	}
+	96% {
+	  content: "De|";
+	}
+	98% {
+	  content: "D|";
+	}
+	100% {
+	  content: "|";
+	}
+  }
+  @keyframes typing {
+	0% {
+	  content: " |";
+	}
+	1.5% {
+	  content: "L|";
+	}
+	3% {
+	  content: "La|";
+	}
+	4.5% {
+	  content: "Lar|";
+	}
+	6% {
+	  content: "Larr|";
+	}
+	7.5% {
+	  content: "Larry|";
+	}
+	9% {
+	  content: "Larry |";
+	}
+	10.5% {
+	  content: "Larry D|";
+	}
+	12% {
+	  content: "Larry Da|";
+	}
+	13.5% {
+	  content: "Larry Dan|";
+	}
+	15% {
+	  content: "Larry Dani|";
+	}
+	16.5% {
+	  content: "Larry Danie|";
+	}
+	18% {
+	  content: "Larry Daniel|";
+	}
+	19.5% {
+	  content: "Larry Daniels|";
+	}
+	22.5% {
+	  content: "Larry Daniels|";
+	}
+	24% {
+	  content: "Larry Daniel|";
+	}
+	25.5% {
+	  content: "Larry Danie|";
+	}
+	27% {
+	  content: "Larry Dani|";
+	}
+	28.5% {
+	  content: "Larry Dan|";
+	}
+	30% {
+	  content: "Larry Da|";
+	}
+	31.5% {
+	  content: "Larry D|";
+	}
+	33% {
+	  content: "Larry |";
+	}
+	34.5% {
+	  content: "Larry|";
+	}
+	36% {
+	  content: "Larr|";
+	}
+	37.5% {
+	  content: "Lar|";
+	}
+	39% {
+	  content: "La|";
+	}
+	40.5% {
+	  content: "L|";
+	}
+	42% {
+	  content: "|";
+	}
+	43.5% {
+	  content: "D|";
+	}
+	45% {
+	  content: "De|";
+	}
+	46.5% {
+	  content: "Dev|";
+	}
+	48% {
+	  content: "Deve|";
+	}
+	49.5% {
+	  content: "Devel|";
+	}
+	51% {
+	  content: "Develo|";
+	}
+	52.5% {
+	  content: "Develop|";
+	}
+	54% {
+	  content: "Develope|";
+	}
+	55.5% {
+	  content: "Developer|";
+	}
+	58.5% {
+	  content: "Developer|";
+	}
+	60% {
+	  content: "Develope|";
+	}
+	61.5% {
+	  content: "Develop|";
+	}
+	63% {
+	  content: "Develo|";
+	}
+	64.5% {
+	  content: "Devel|";
+	}
+	66% {
+	  content: "Deve|";
+	}
+	67.5% {
+	  content: "Dev|";
+	}
+	69% {
+	  content: "De|";
+	}
+	70.5% {
+	  content: "D|";
+	}
+	72% {
+	  content: "|";
+	}
+	73.5% {
+	  content: "D|";
+	}
+	75% {
+	  content: "De|";
+	}
+	76.5% {
+	  content: "Des|";
+	}
+	78% {
+	  content: "Desi|";
+	}
+	79.5% {
+	  content: "Desig|";
+	}
+	81% {
+	  content: "Design|";
+	}
+	82.5% {
+	  content: "Designe|";
+	}
+	84% {
+	  content: "Designer|";
+	}
+	87% {
+	  content: "Designer|";
+	}
+	88.5% {
+	  content: "Designe|";
+	}
+	90% {
+	  content: "Design|";
+	}
+	91.5% {
+	  content: "Desig|";
+	}
+	93% {
+	  content: "Desi|";
+	}
+	94.5% {
+	  content: "Des|";
+	}
+	96% {
+	  content: "De|";
+	}
+	98% {
+	  content: "D|";
+	}
+	100% {
+	  content: "|";
+	}
+  }
+  header .home-social-icons li i {
+	font-size: 0.8rem;
+  }
+  header .home-social-icons li {
+	width: 2.3rem;
+	height: 2.3rem;
+	background-color: #0005;
+	border-radius: 50%;
+	margin: 0 0.1rem;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+  }
+  /* ----------------------End Header-------------------------- */
+  /* ------------------------Start About--------------------------- */
+  .hero-img {
+	padding: 0 0 0 30px;
+	position: relative;
+	z-index: 999;
+  }
+  .hero-img::after {
+	content: "";
+	position: absolute;
+	top: 25%;
+	left: 0;
+	width: 75%;
+	height: 80%;
+	z-index: -1;
+	background-image: url(../images/dots.png);
+  }
+  span.sub-title {
+	color: #999;
+	letter-spacing: 2px;
+	font-size: 0.9rem;
+  }
+  .about p {
+	line-height: 1.6;
+	margin: 0;
+	font-size: 15px;
+	color: var(--text-color);
+  }
+  .skills-progress {
+	width: 100%;
+	border-radius: 5px;
+	background: #f7f7f7;
+	-webkit-box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+			box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+	height: 25px;
+  }
+  .progress-bar {
+	background-color: var(--main-color);
+	border-radius: 5px;
+  }
+  .btns-group .blc-btn {
+	background-color: var(--main-color);
+	font-size: 0.8rem;
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+  }
+  .btns-group .blc-btn:hover {
+	background-color: #fff;
+	color: var(--main-color) !important;
+	border: 1px solid var(--main-color);
+  }
+  .btns-group .white-btn {
+	background-color: #fff;
+	color: var(--main-color) !important;
+	font-size: 0.8rem;
+	border: 1px solid var(--main-color);
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+  }
+  .btns-group .white-btn:hover {
+	background-color: var(--main-color);
+	color: #fff !important;
+  }
+  
+  /* ------------------------Start Services----------------------------- */
+  .services-contact-card i {
+	width: 4.1rem;
+	height: 4.1rem;
+	font-size: 1.7rem;
+	background-color: #f4f4f4;
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+  }
+  .services-contact-card p {
+	font-size: 0.9rem;
+	color: var(--text-color);
+  }
+  .services-contact-card:hover i {
+	background-color: var(--main-color);
+	color: #fff;
+  }
+  /* ------------------------Start Portfolio----------------------------- */
+  #works .nav-pills .nav-link,
+  #works .nav-pills .nav-link:hover {
+	color: var(--main-color);
+	background-color: transparent;
+	font-weight: 800;
+	padding: 0;
+	margin: 0 15px;
+	position: relative;
+  }
+  #works .nav-pills .nav-link::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	background-color: var(--main-color);
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+  }
+  #works .nav-pills .nav-link.active::after {
+	width: 100%;
+  }
+  .work-desc h6 {
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+	opacity: 0;
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+  }
+  .tab-content figure:hover h6 {
+	top: 45%;
+	opacity: 1;
+  }
+  .work-desc ul {
+	top: 55%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+	opacity: 0;
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+  }
+  .tab-content figure:hover ul {
+	top: 55%;
+	opacity: 1;
+  }
+  .work-desc ul li {
+	width: 35px;
+	height: 35px;
+	padding: 0.5rem;
+	background-color: var(--main-color);
+	color: #eee;
+	font-size: 12px;
+	border-radius: 50%;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+  }
+  .work-desc ul li:hover {
+	background-color: transparent;
+	color: var(--main-color);
+	border: 0.5px solid var(--main-color);
+  }
+  .tab-content figcaption {
+	top: 1rem;
+	right: 0.4rem;
+	bottom: -0.4rem;
+	left: 0.4rem;
+	background-color: rgba(255, 255, 255, 0.89);
+	opacity: 0;
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+  }
+  .tab-content figure:hover figcaption {
+	opacity: 1;
+	top: 0.4rem;
+	bottom: 0.4rem;
+  }
+  .modal-content {
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+  }
+  .modal-dialog .btn-close {
+	font-size: 14px;
+	position: relative;
+	right: -50px;
+  }
+  /* ----------------------------Testimonials------------------------- */
+  .carousel-inner p {
+	color: var(--text-color);
+	max-width: 85%;
+  }
+  .carousel-inner span {
+	font-size: 12px;
+	font-weight: 600;
+	color: #888;
+	margin-bottom: 30px;
+  }
+  .carousel-indicators [data-bs-target] {
+	width: 0.65rem;
+	height: 0.65rem;
+	background-color: #869791;
+	border-radius: 50%;
+	margin: 1.5rem 0.5rem;
+  }
+  /* -----------------------------Counter----------------------------- */
+  .counter-card i,
+  .counter-card h3 {
+	color: var(--main-color);
+  }
+  .counter-card p {
+	line-height: 1.6;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--text-color);
+  }
+  /* -------------------------Start Team----------------------------- */
+  .card-caption {
+	background-color: #5a5a5a;
+  }
+  .card-caption h5 {
+	font-weight: 600;
+  }
+  .team-icons li a {
+	color: #fff;
+	-webkit-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+  }
+  .team-icons li:hover a {
+	color: var(--main-color);
+  }
+  .team-icons li {
+	width: 40px;
+	height: 40px;
+	background-color: var(--main-color);
+	border-radius: 50%;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+  }
+  .team-icons li:hover {
+	background-color: transparent;
+	border: 0.5px solid var(--main-color);
+  }
+  .card-img .img-overlay {
+	/* top: 0.35rem;
+	  right: 0.35rem;
+	  bottom: 0.35rem;
+	  left: 0.35rem; */
+	inset: 0.35rem;
+	background-color: rgba(255, 255, 255, 0.95);
+	opacity: 0;
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+	-webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+			transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  .team-card:hover .img-overlay {
+	cursor: pointer;
+	opacity: 1;
+	-webkit-transform: rotateY(0deg) scale(1, 1);
+			transform: rotateY(0deg) scale(1, 1);
+  }
+  .card-img img {
+	-webkit-transition: all var(--animation-time);
+	-o-transition: all var(--animation-time);
+	transition: all var(--animation-time);
+  }
+  .card-img:hover img {
+	-webkit-transform: scale(1.2, 1.2);
+		-ms-transform: scale(1.2, 1.2);
+			transform: scale(1.2, 1.2);
+  }
+  /* ----------------------Contact-------------------------- */
+  .form-control:focus {
+	outline: 0;
+	-webkit-box-shadow: none;
+			box-shadow: none;
+  }
+  input::-webkit-input-placeholder {
+	font-size: 14px;
+  }
+  input::-moz-placeholder {
+	font-size: 14px;
+  }
+  input:-ms-input-placeholder {
+	font-size: 14px;
+  }
+  input::-ms-input-placeholder {
+	font-size: 14px;
+  }
+  input::placeholder {
+	font-size: 14px;
+  }
+  textarea {
+	max-height: 160px;
+  }
+  .btn-submit {
+	background-color: var(--main-color);
+	color: #eee;
+	font-size: 0.8rem;
+	float: left;
+  }
+  .btn-submit:hover {
+	background-color: transparent;
+	color: var(--main-color);
+	border: 1px solid var(--main-color);
+  }
+  /* ------------------------Footer---------------------------- */
+  footer {
+	background-color: var(--main-color);
+	color: var(--text-color);
+  }
+  footer p {
+	font-size: 0.8rem;
+	word-spacing: 2px;
+  }

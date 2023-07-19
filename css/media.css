@@ -1,0 +1,29 @@
+@media screen and (max-width: 992px) {
+  .nav-link::after,
+  .nav-link.active::after {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nav-link.active::after,
+  body:not(:has(:target)) .home-link::after,
+  body:has(.home:target) .home-link::after,
+  body:has(.about:target) .about-link::after,
+  body:has(.services:target) .services-link::after,
+  body:has(.works:target) .works-link::after,
+  body:has(.clients:target) .clients-link::after,
+  body:has(.team:target) .team-link::after,
+  body:has(.contact:target) .contact-link::after {
+    content: "";
+    width: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  ul.navbar-nav {
+    margin: auto !important;
+    text-align: center;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+}
